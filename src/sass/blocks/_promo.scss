@@ -8,4 +8,50 @@
         align-items: flex-end;
         margin-top: 90px;
     }
+    &__header {
+        font-weight: 700;
+        font-size: 42px;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        line-height: 42px;
+    }
+    &__subheader {
+        margin-top: 17px;
+        font-weight: 500;
+        font-size: 24px;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        line-height: 24px;
+    }
+    &__icons {
+        margin-top: 65px;
+        width: 425px;
+        display: flex;
+        justify-content: space-between;
+
+    }
+    &__icon {
+        width: 108px;
+        text-align: center;
+        color: #FFFFFF;
+        font-size: 14px;
+        font-weight: 500;
+        img {
+            display: block;
+            margin: 0 auto;
+            margin-bottom: 20px;
+        }
+        
+    }
+    &__link {
+        color: #FFFFFF;
+        font-size: 16px;
+        font-weight: 500;
+        margin-top: 18px;
+        a {
+            text-decoration: underline;
+            text-transform: uppercase;
+            color: #FFFFFF;
+        }
+    }
 }
