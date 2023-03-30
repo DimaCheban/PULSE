@@ -13,3 +13,22 @@
     }
 }
 };
+@media (max-width: 575px) {
+    .header {
+        flex-wrap: wrap;
+        span {
+            font-size: 14px;
+        }
+        &__contacts {
+            margin-top: 15px;
+
+        }
+        
+        &__logo {
+            width: 140px;
+            img {
+                width: 100%;
+            }
+        }
+    }
+}
