@@ -1,0 +1,20 @@
+@media (max-width: 767px) {
+    .consultation {
+        padding: 30px 0 50px 0;
+        &__descr {
+            color: #ffffff;
+            font-size: 14px;
+            font-weight: 500;
+        }
+        .title {
+            font-size: 20px;
+            line-height: 40px;
+        }
+    }
+}
+@media (max-width: 576px) {
+    .consultation {
+        display:flex;
+        justify-content: space-around;
+    }
+} 

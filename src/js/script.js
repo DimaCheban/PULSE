@@ -8,9 +8,6 @@ $(document).ready(function(){
             {
                 breakpoint: 992,
                 settings: {
-                    // $lidesToShow: 3,
-                    // slidesToScroll: 3,
-                    // infinity: true,
                     dots: true,
                     arrows: false
                 }
