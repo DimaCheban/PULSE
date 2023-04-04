@@ -44,16 +44,13 @@
         &_active {
             display: flex;
         }
-
     }
     &-item {
         width: 300px;
         min-height: 440px;
         border: 2px solid #e8e8e8;
-        background-color: #ffffff;
         padding: 20px 20px 26px 20px;
         overflow: hidden;
-        position: relative;
         margin-bottom: 20px;
         &__img {
             display: block;
@@ -70,20 +67,23 @@
         }
         &__descr {
             margin-top: 16px;
+            color: #0d0d0d;
             font-size: 14px;
             font-weight: 300;
-            color: #0d0d0d;
             text-align: center;
         }
         &__link {
             display: block;
             margin-top: 17px;
+            color: $main-color;
             font-size: 14px;
             font-weight: 500;
             text-decoration: underline;
-            color: $main-color;
             text-align: center;
             text-transform: uppercase;
+            &:hover {
+                color: $main-color;
+            }
         }
         hr {
             background-color: #e8e8e8;
@@ -122,19 +122,21 @@
             }
         }
         &__list {
+            position: relative;
             width: 50%;
             margin-left: 20px;
-            transform: translateX(100%);
+            transform: translateX(0%);
             padding-right: 20px;
             transition: 0.5s all;
             padding-left: 19px;
             margin-bottom: 0;
             list-style-type: none;
             &_active {
-                transform: translateX(0%);
+                transform: translateX(-100%);
                 margin-left: 0px;
             }
             li {
+                position: relative;
                 color: #555555;
                 font-size: 14px;
                 font-weight: 300;
@@ -146,23 +148,23 @@
                     height: 5px;
                     background-color: $main-color;
                     left: -14px;
-                    top: 7;
+                    top: 7px;
                 }
             }
-            &__back {
-                position: absolute;
-                bottom: 0;
-                left: 50%;
-                transform: translateX(calc(-50% - 19px));
-                display: block;
+        }
+        &__back {
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(calc(-50% - 19px));
+            display: block;
+            color: $main-color;
+            font-size: 14px;
+            font-weight: 500;
+            text-decoration: underline;
+            text-transform: uppercase;
+            &:hover {
                 color: $main-color;
-                font-size: 14px;
-                font-weight: 500;
-                text-decoration: underline;
-                text-transform: uppercase;
-                &:hover {
-                    color: $main-color;
-                }
             }
         }
     }
