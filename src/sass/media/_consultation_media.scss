@@ -1,5 +1,17 @@
+@media (max-width: 991px) {
+    .consultation {
+        display:flex;
+        justify-content: space-around;
+        &__descr {
+          text-align: center;
+          margin-bottom: 36px;
+        }
+    }
+}
+
 @media (max-width: 767px) {
     .consultation {
+        min-height: 550px;
         padding: 30px 0 50px 0;
         &__descr {
             color: #ffffff;
@@ -16,5 +28,7 @@
     .consultation {
         display:flex;
         justify-content: space-around;
+       
     }
+   
 } 
