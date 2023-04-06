@@ -1,3 +1,33 @@
 .reviews {
     padding: 0 0 49px 0;
+    &__block {
+        display: flex;
+        margin-top: 60px; 
+       
+    }
+    &__descr {
+        max-width: 686px;
+        margin-left: 60px;
+    }
+    &__img {
+        max-height: 169px;
+    }
+    &__subtittle {
+        font-weight: 700;
+        font-size: 18px;
+        color: #0D0D0D;
+    }
+    &__marathon {
+        font-weight: 500;
+        font-size: 14px;
+        color: #646464;
+    }
+    &__text {
+        margin-top: 10px;
+        font-weight: 300;
+        font-size: 16px;
+        color: #0D0D0D;
+        line-height: 25px;
+
+    }
 }
