@@ -1,0 +1,28 @@
+@media(max-width: 991px) {
+    .reviews {
+        display: flex;
+        &__block {
+            flex-direction: column;
+            // text-align: center;
+        }
+        &__img {
+            max-width: 196px;
+           max-height: 196px;
+        }
+        &__descr {
+            margin-left: 0px;
+        }
+        &__subtittle {
+            margin-top: 20px;
+        }
+    }
+}
+
+@media(max-width: 767px) {
+    .reviews {
+        &__block {
+            justify-content: center;
+            margin: 30px 15px 0 15px;
+        }
+    }
+} 
