@@ -1,7 +1,14 @@
-@media(max-width:576){
+@media(max-width:576px){
 .footer {
+    position: relative;
+    overflow: hidden;
     &__info {
         width: 320px;
+        padding: 40px 40px 40px 40px;
     }
+    &__addr {
+        font-size: 16px;
+    }
+   
 }
 }
