@@ -4,3 +4,13 @@
         margin: 0 auto;
     }
 }
+
+@media (max-width: 576px) {
+    .feed-form {
+        width: 270px;
+        margin-top: 25px;
+        &_mt25 {
+            margin-top: 25px;
+        }
+    }
+}
