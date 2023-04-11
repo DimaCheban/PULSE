@@ -81,23 +81,23 @@ $(document).ready(function(){
     validateForms('#order form');
     validateForms('#consultation form');
 
-    // $('form').submit(function() {
-    //     e.preventDefault();
+    $('form').submit(function() {
+        e.preventDefault();
 
-    //     if(!$(this).valid()) {
-    //         return;
-    //     }
+        if(!$(this).valid()) {
+            return;
+        }
 
-    //     $.ajax({
-    //         type: "POST",
-    //         url:"mailer/smart.php",
-    //         data: $(this).serialize()
-    //     }).done(function() {
-    //         $(this).find("input").val("");
+        $.ajax({
+            type: "POST",
+            url:"mailer/smart.php",
+            data: $(this).serialize()
+        }).done(function() {
+            $(this).find("input").val("");
 
 
-    //        $('form').trigger('rest'); 
-    //     });
-    //     return false;
-    // });
+           $('form').trigger('rest'); 
+        });
+        return false;
+    });
 }); 
