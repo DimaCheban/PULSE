@@ -20,4 +20,4 @@ yarn-error.log*
 
 /test papka
 
-/mailer
+/src/mailer
