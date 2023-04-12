@@ -30,4 +30,12 @@
         color: #FF0000;
 
     }
+    &__img {
+        &_animate {
+            animation-name: heartbeat;
+            animation-duration: 1.5s;
+            animation-timing-function: ease;
+            animation-iteration-count: infinite;
+        }
+    }
 }
